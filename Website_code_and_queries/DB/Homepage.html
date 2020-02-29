@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>HomePage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+	
+     
+
+@media only screen and (max-width: 1223px) {
+
+.navbar-header .navbar-brand:hover,
+.navbar-header .navbar-brand:focus,
+.navbar-collapse .navbar-nav > li > a:hover,
+.navbar-collapse .navbar-nav > li > a:focus {
+    color: #990000;
+
+}
+
+
+
+.navbar-header .navbar-brand,
+.navbar-header .navbar-brand,
+.navbar-collapse .navbar-nav,
+.navbar-collapse .navbar-nav{
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+} 
+
+.form-group, footer{
+font-family: 'Roboto', sans-serif;
+}
+
+legend{
+font-family: 'Roboto', sans-serif;
+font-weight: bold;
+}
+
+.btn {
+    background-color: #990000; 
+    border: none;
+    color: white;
+	padding: 7px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15 px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #990000;
+    color: white;
+}
+
+
+input[type=button] 
+{
+    background-color: #990000;
+    border: none;
+    color: white;
+	border-radius: 5px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+    padding: 8px 16px;
+    text-decoration: none;
+	width: 50%
+    cursor: pointer;
+}
+
+#video-bg-elem{
+display:none;
+}
+
+
+body {
+        background-color: #990000;
+		position:relative;
+    }  
+
+
+.content h1 {
+padding-left:30px;
+color:#009999;
+font-size:40px;
+}
+
+.content h4 {
+
+color:#009999;
+font-size:15px;
+font-style:bold ;
+
+}
+
+	
+  #section1 {padding-top:50px;height:20%;color: #fff; }
+  #section2 {padding-top:50px;height:20%;color: #fff; }
+  #section3 {padding-top:50px;height:20%;color: #fff; }
+  #section4 {padding-top:50px;height:20%;color: #fff; }
+  #section5 {padding-top:50px;height:20%;color: #fff; }
+
+	
+	.map {
+	display: none;
+	}
+	
+	.map1{
+	display:none;]
+	}
+	   .Table {
+		
+            width: 100%;
+			float:left;
+			color:white;
+			font-family:'Roboto', sans-serif;
+			font-style:bold;
+			font-size:18px;
+			overflow: auto;	
+			
+	   }
+	   
+	  
+			
+		
+		 .Table1 {
+			position:relative;
+            width: 100%;
+			float:left;
+			color:white;
+			font-family:'Roboto', sans-serif;
+			font-style:bold;
+			font-size:18px;
+			overflow: auto;
+	   }
+	   
+	   .Table1 h3{
+			float:right;
+			color:red;
+			font-family: 'Roboto', sans-serif;
+			font-style:bold;
+			font-size:18px;
+	   
+	   }
+
+	  
+}
+
+@media only screen and (min-width: 1224px) {
+
+
+.navbar-header .navbar-brand:hover,
+.navbar-header .navbar-brand:focus,
+.navbar-collapse .navbar-nav > li > a:hover,
+.navbar-collapse .navbar-nav > li > a:focus {
+    color: #990000;
+
+}
+
+
+
+.navbar-header .navbar-brand,
+.navbar-header .navbar-brand,
+.navbar-collapse .navbar-nav,
+.navbar-collapse .navbar-nav{
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+} 
+
+.form-group, footer{
+font-family: 'Roboto', sans-serif;
+}
+
+legend{
+font-family: 'Roboto', sans-serif;
+font-weight: bold;
+}
+
+.btn {
+    background-color: #990000; 
+    border: none;
+    color: white;
+	padding: 7px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15 px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #990000;
+    color: white;
+}
+
+
+
+input[type=button] 
+{
+    background-color: #990000;
+    border: none;
+    color: white;
+	border-radius: 5px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+    padding: 8px 16px;
+    text-decoration: none;
+	width: 50%
+    cursor: pointer;
+}
+
+
+body {
+        background-color: black;
+		position:relative;
+    }   
+		
+ul.gallery{   
+margin-left: 3vw; 
+}    
+
+.zoom {      
+-webkit-transition: all 0.35s ease-in-out;    
+-moz-transition: all 0.35s ease-in-out;    
+transition: all 0.35s ease-in-out;     
+cursor: -webkit-zoom-in;      
+cursor: -moz-zoom-in;      
+cursor: zoom-in;  
+}     
+
+.zoom:hover,  
+.zoom:active,   
+
+.zoom:focus {
+transform: scale(1.1);    
+position:relative;      
+z-index:100;  
+}
+	
+	
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+
+	
+.content{
+position:absolute;
+width:100%;
+z-index:1000;
+}
+
+
+.content h1 {
+padding-left:30px;
+color:Blue;
+font-size:60px;
+
+}
+
+
+.content h4 {
+
+color:Blue;
+font-size:18px;
+font-family: 'Roboto', sans-serif;
+}
+
+
+
+*{
+margin:0;
+padding:0;
+}
+
+	
+
+
+
+      .map {
+    
+        width: 48%;
+		float:right;
+       }
+	   
+	   .Table {
+		
+            width: 48%;
+			float:left;
+			color:white;
+			font-family: 'Roboto', sans-serif;
+			font-style:bold;
+			font-size:20px;
+			overflow: auto;	
+			
+	   }
+	   
+	  
+	   
+	   
+	   
+      .map1 {
+    
+        width: 48%;
+		float:left;
+		position:relative;
+       }
+	   
+	   .Table1 {
+			position:relative;
+            width: 48%;
+			float:right;
+			color:white;
+			font-family: 'Roboto', sans-serif;
+			font-style:bold;
+			font-size:20px;
+			overflow: auto;
+	   }
+	   
+	   .Table1 h3{
+			font-family:'Roboto', sans-serif;
+			font-style:bold;
+			font-size:18px;
+	   
+	   }
+	   
+	 
+  #section1 {padding-top:50px;height:20%;color: #fff; }
+  #section2 {padding-top:50px;height:20%;color: #fff; }
+  #section3 {padding-top:50px;height:20%;color: #fff; }
+  #section4 {padding-top:50px;height:20%;color: #fff; }
+  #section5 {padding-top:50px;height:20%;color: #fff; }
+ 
+}
+
+
+
+#video-bg-elem{
+position: fixed;
+top: 50%;
+left: 50%;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: -100;
+transform: translateX(-50%) translateY(-50%);
+background: url('images/poster.jpg') no-repeat;
+background-size: cover;
+transition: 109s opacity;
+opacity:1;
+}
+
+
+#test{
+position: relative;
+    top: 620px;
+	color:white;
+}
+#test1{
+  background-color: #990000; 
+    border: none;
+    color: white;
+	padding: 7px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15 px;
+	 position: relative;
+    top: 610px;
+}
+
+
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+
+.loginmodal-container {
+  padding: 30px;
+  max-width: 350px;
+  width: 100% !important;
+  background-color: #F7F7F7;
+  margin: 0 auto;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  font-family: roboto;
+}
+
+.loginmodal-container h1 {
+  text-align: center;
+  font-size: 1.8em;
+  font-family: roboto;
+}
+
+.loginmodal-container input[type=submit] {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.loginmodal-container input[type=text], input[type=password] {
+  height: 44px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+  -webkit-appearance: none;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  /* border-radius: 2px; */
+  padding: 0 8px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.loginmodal-container input[type=text]:hover, input[type=password]:hover {
+  border: 1px solid #b9b9b9;
+  border-top: 1px solid #a0a0a0;
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.loginmodal {
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  height: 36px;
+  padding: 0 8px;
+}
+
+.loginmodal-submit {
+
+  border: 0px;
+  color: #fff;
+  text-shadow: 0 1px rgba(0,0,0,0.1); 
+  background-color: #4d90fe;
+  padding: 17px 0px;
+  font-family: roboto;
+  font-size: 14px;
+
+}
+
+.loginmodal-submit:hover {
+
+  border: 0px;
+  text-shadow: 0 1px rgba(0,0,0,0.3);
+  background-color: #357ae8;
+
+}
+
+.loginmodal-container a {
+  text-decoration: none;
+  color: #666;
+  font-weight: 400;
+  text-align: center;
+  display: inline-block;
+  opacity: 0.6;
+  transition: opacity ease 0.5s;
+} 
+
+.login-help{
+  font-size: 12px;
+}
+
+
+
+	    </style>
+  </head>
+  <body>
+    
+	 
+<div class = "scrolspy" data-spy="scroll" data-target=".navbar" data-offset="50" >
+
+
+<div class ="background-wrap">	
+
+<video id = "video-bg-elem" preload="auto" autoplay="true" loop="loop">
+
+<source src="NewBees.mp4" type="video/mp4">
+
+<source src="NewBees.mp4" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+</div>
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar1">
+     <span class="icon-bar"></span>
+     <span class="icon-bar"></span>
+     <span class="icon-bar"></span>
+    </button>
+      <a class="navbar-brand" href="HomePage.html"></span>RoboBees</a>
+    </div>
+    <div>
+  <div class="collapse navbar-collapse" id="navbar1">
+
+<ul class="nav navbar-nav">
+	<li><a data-toggle="modal" data-target="#login-modal" style="cursor:pointer">Login</a></li>
+	<li><a href="aboutUs.html">About Us</a></li>
+	
+    <li><a href="contactUs.html">Contact Us</a></li>
+	<li><a href="adminpage.html">Reports</a></li>
+	</ul>
+    </li>
+</ul>
+
+<form class="navbar-form navbar-right" role="search">
+    <div class="input-group">
+		<a href="tel:+8572609895"><i class="icon-search"></i><input type = "button" value="Contact Number: (857)-260-9895"></a>
+    </div>
+</form>
+	 
+    </div>
+    </div>
+  </div>
+</nav>
+
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    	  <div class="modal-dialog">
+				<div class="loginmodal-container">
+					<h1>Login to Your Account</h1><br>
+						<form action='login.php' method='post' accept-charset='UTF-8'>
+							<input type='hidden' name='submitted' id='submitted' value='1'/>
+							<input type="text" name="user" placeholder="Username">
+							<input type="password" name="pass" placeholder="Password">
+							<input type="submit" name="Submit" class="login loginmodal-submit" value="Submit" >
+						</form>
+					
+					<div class="login-help">
+						<a href="register.html">Register</a>
+					</div>
+				</div>
+			</div>
+</div>
+  
+
+<div class = content>
+
+
+</div>
+</div>
+</body>
+</html>
